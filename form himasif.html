@@ -2,91 +2,116 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Form-Pendaftaran Himasif</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Form HIMASIF</title>
+    <link rel="stylesheet" href="style3.css">
     <link rel="icon" type="image/png" href="logo.png">
   </head>
   <body>
-  <div class="header">
-    <div id="logo">
-      <img height="60" width="60" src="logo.png">
-  </div>
+<header>
+      <div id="logo">
+        <img height="60" width="60" src="logo.png">
+    </div>
 
-  <div class="name">
-      Struktur Organisasi Fakultas Ilmu Komputer
+    <div class="name">
+        Struktur Organisasi Fakultas Ilmu Komputer
+    </div>
+  <div class="dropdown">
+  <button class="drop"> ☰ </button>
+  <div class="dropdown-content">
+    <a href="home.html">Beranda</a>
+    <a href="s.html">Ormawa</a>
+    <a href="bem.html">Profil</a>
+    <a href="option.html">Pendaftaran</a>
   </div>
-<div class="dropdown">
-<button class="drop"> ☰ </button>
-<div class="dropdown-content">
-  <a href="beranda.html">Beranda</a>
-  <a href="#">Struktur BEM</a>
-  <a href="#">Struktur BPM</a>
-  <a href="#">Struktur HIMASIF</a>
-  <a href="shimatiif.html">Struktur HIMATIIF</a>
-  <a href="sal.html">Struktur Al-Azhar </a>
-  <a href="option.html">Pendaftaran</a>
-</div>
-</div>
+  </div>
+</header>
   </body>
-<br><br><br><br><br><br><br>
-  <table border="0" bgcolor="white" align="center" height="1800" width=850"" cellpadding="20">
+<br><br><br><br><br>
+  <table border="0"  bgcolor="#ffffff" align="center" height="1300" width=900"" cellpadding="10">
     <tr>
     <td>
 <div class="judul">
-    <head><font color="black" face="Brush Script MT" size="7">Form Pendaftaran Anggota HIMASIF 2k18 </head>
-<br></br>
+    <h1><font color="black" face="freestyle script" size="7">Form Pendaftaran Anggota HIMASIF 2k18 </h1>
+<br>
 </div>
 
 <body>
-<form action="feedback.html">
-  <div class="register">
-    <p>Silahkan isi formulir dibawah ini</p>
+
+<div class="register">
+<form  name = "biodata" method="post"  action="formbem.html">
+    <h4>Silahkan isi formulir dibawah ini</h4>
     <br></br>
 
-    <p><b>Nama lengkap*</p></b>
-    <input type="text" name="nama" size="15" placeholder="Nama Depan">
-    <input type="text" name="nama" size="15" placeholder="Nama Belakang"><br><br>
+    Nama lengkap <br>
+    <input type = "text" id = "NamaDepan" placeholder= "Nama Depan" required="">   <input type = "text" id = "NamaBelakang" placeholder="Nama Belakang" required=""><br><br>
 
-    <p><b> NIM * </b></p>
-    <input type="text" name="number" size="12" placeholder="NIM"><br><br>
+    Nim          <br>
+    <input type = "number" id = "Nim" placeholder="NIM" required=""> <br><br>
 
-    <p><b> TTL * </b></p>
-    <input type="date" Name="nama" size="20" placeholder="tgl">
 
-    <p><b> No Telephone* </b></p>
-    <input type="tel" name="number" size="13" placeholder="No Telephone/HP"><br><br>
+    TTL          <br>
+    <input type = "date" id = "tgl" placeholder="tgl" required=""><br><br>
 
-    <p><b> Alamat di Jember* </b></p>
-    <input type="text" name="nama" size="50" placeholder=" Alamat di Jember"><br><br>
+    No Telephone <br>
+    <input type = "tel"  id = "telephone" placeholder="Telephone" required=""><br><br>
 
-    <p><b> Alamat Email* </b></p>
-    <input type="email" name="email" size="46" placeholder="Alamat Email"><br><br>
+    Alamat di Jember        <br>
+    <input type = "text" id = "alamatj" placeholder=" Alamat " required=""><br><br>
 
-    <p><b> Alasan Ikut Organisasi* </b></p>
-    <input type="text" name="nama" size="50" placeholder="Alasan ikut organisasi"><br><br>
+    Alamat Email            <br>
+    <input type="email" id="email"  placeholder=" Email " required=""><br><br>
 
-    <p><b> Motto* </b></p>
-    <input type="text" name="nama" size="20" placeholder="Motto"><br><br>
+    Alasan Ikut Organisasi  <br>
+    <input type="text" id="alasan"  placeholder="Alasan ikut organisasi" required=""><br><br>
 
-    <p><b> Pengalaman Berorganisasi* </b></p>
-    <input type="text" name="nama" size="50" placeholder="Pengalaman berorganisasi"><br><br>
+    Motto                   <br>
+    <input type = "text" id = "motto" placeholder= "Motto" required=""><br><br>
 
-    <p><b> Divisi yang diinginkan*</p></b>
-    <input type="text" name="nama" size="15" placeholder="Devisi yang diinginkan"><br><br>
+    Pengalaman Berorganisasi <br>
+    <input type = "text" id = "pengalaman" placeholder= "Pengalaman Organisasi" required=""><br><br>
 
-    <p><b> Deskripsi Diri* </p></b>
-    <input type="text" name="nama" size="100" placeholder="Deskripsi Diri"><br><br>
+    Divisi yang diinginkan   <br>
+    <select id = "divisi">
+      <option> Mediatek
+      <option> Kominfo
+      <option> PSDM
+      <option> Humas
+    </select><br><br>
+
+    Deskripsi Diri           <br>
+    <input type = "text" id = "deskripsi" placeholder=" Deskripsi diri" required="">
 
 <br></br><br></br>
 <div class="button">
-    <input value="Kirim" style="background-color: 4985D0; height: 50; width: 150;"type="submit">
+  <input type = "button" onclick = "terimainput()" value = "Kirim">
+  <input type = "reset" value = "Ulangi">
   </div>
+</form>
+</table>
+<br></br>
 
+<div class="table">
+ <table border="1" id="tableinput">
+
+<tr>
+      <td>Nama lengkap</td>
+      <td>Nim</td>
+      <td>TTL</td>
+      <td>No Telephone</td>
+      <td>  Alamat di Jember </td>
+      <td> Alamat Email </td>
+      <td> Alasan Ikut Organisasi </td>
+      <td> Motto </td>
+      <td>Pengalaman Berorganisasi</td>
+      <td>Divisi yang diinginkan</td>
+      <td>Deskripsi Diri</td>
+
+</tr>
+</div>
   <div class = "footer">
     <p> Copyright©Ari Puji Astuti-Sintya Septina Rianti</p>
   </div>
   </tr>
   </td>
-</form>
   </body>
 </html>

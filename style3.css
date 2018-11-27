@@ -1,20 +1,12 @@
 body{
   margin: 0;
-	padding-top: 0;
-	background: #2c3b51 no-repeat;
-	background-size: cover;
-	height: 100%
+  background-size: cover;
+  background-image: url(https://static1.squarespace.com/static/55f7605ce4b0d9c41f11106d/t/55fdd7c2e4b0fa9f9a8772ab/1442699205388/Sunrise-on-Monroe-%281%29.jpg?format=1500w);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
-h3{
-  padding-top: 5%;
-  text-align: center;
-  text-decoration: underline;
-  font-weight: bold;
-  color: white;
-  text-decoration-color: gold;
-  font-size: 30px;
-  font-style: verdana;
-}
+
 header {
     width: 100%;
   	height: 95px;
@@ -53,8 +45,7 @@ header {
 }
 
 .dropdown {
-    float: right;
-    padding-right: 85px;
+    float: left;
     position: relative;
     display: inline-block;
 }
@@ -75,6 +66,7 @@ header {
     display: block;
     font-size: 15px;
 }
+
 .dropdown-content a:hover {background-color: green}
 
 .dropdown:hover .dropdown-content {
@@ -85,39 +77,40 @@ header {
     background-color: #3e8e41;
 }
 
-.container {
-    display: block;
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+.register {
+  height: 1000px;
+  width: 1000px;
+  font-size: 20px;
+  color: black;
+  font-family: Arial;
+  text-align: justify;
 }
 
-.contact-icon {
-  box-sizing: border-box;
-  padding: 10px 12px;
-  overflow: hidden;
+.tabel {
+	max-width: 1000px;
+	float: left;
+  border-collapse: collapse;
+}
+
+
+.judul {
   text-align: center;
 }
 
-.contact-icon img {
-    height: 100px;
-    max-width: 100px;
+
+.button {
+  text-align: right;
+  margin-right: 30px;
 }
 
 
-a {
-  color: white;
-}
-
-footer {
+.footer {
   position: relative;
-  left: 0;
-  bottom: 0;
   width: 100%;
   height: 50px;
   background-color: black;
   color: white;
   font-family: arial;
   text-align: center;
-  padding-top: 0.3%;
+  padding-top: 0.1%;
 }
